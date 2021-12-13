@@ -1,0 +1,11 @@
+shopping={"piekarnia": ["bułki", "chleb", "pączek"],
+         "warzywniak": ["marchew", "seler", "rukola"]}
+
+ctr=sum(map(len,shopping.values()))
+
+
+for shop in shopping:
+    for item in shopping[shop]:
+        print("idę do %s i kupuję tam %s," %(shop, item))
+
+print("w sumie kupuję %s produktów" %(ctr))
